@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+
+mple-header-image {
+  width: 40px;
+  /* Reduzindo o tamanho do avatar */
+  height: 40px;
+}
+
+.mat-card-title,
+.mat-card-subtitle {
+  font-size: 14px;
+  /* Reduzindo o tamanho do texto do título e do subtítulo */
+}
+
+.mat-card-content {
+  font-size: 9px;
+  /* Reduzindo o tamanho do texto do conteúdo */
+}
+
+.mat-card-actions {
+  justify-content: center;
+  /* Centralizando os botões */
+}
+
+button.mat-button {
+  font-size: 12px;
+  /* Reduzindo o tamanho do texto dos botões */
+  padding: 5px 10px;
+  /* Reduzindo o padding dos botões */
+}
+
+
+
+mat-form-field {
+  margin-right: 12px;
+}
+ 
+
+.example-card {
+  width: 170px;
+  /* Reduzindo a largura do card */
+}
+
+ .example-card-selecionados {
+  width: 130px;
+  gap: 20px;
+
+}
+
+.card-wrapper-selecionados {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  padding: 5px 10px;
+}
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}

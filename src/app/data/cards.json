@@ -1,0 +1,21 @@
+[
+    {
+      "title": "Shiba Inu",
+      "subtitle": "Dog Breed",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+      "description": "The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting."
+    },
+    {
+      "title": "Golden Retriever",
+      "subtitle": "Dog Breed",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+      "description": "The Golden Retriever is a large-sized breed of dog bred as gun dogs to retrieve shot waterfowl, such as ducks and upland game birds, during hunting and shooting parties, and were named 'retriever' because of their ability to retrieve shot game undamaged."
+    },
+    {
+      "title": "Labrador Retriever",
+      "subtitle": "Dog Breed",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+      "description": "The Labrador Retriever, or just Labrador, is a large breed of retriever-gun dog originating from the United Kingdom and Canada. They are one of the most popular breeds of dog in Canada, the United Kingdom and the United States."
+    }
+  ]
+  

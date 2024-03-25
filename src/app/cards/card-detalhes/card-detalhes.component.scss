@@ -1,0 +1,124 @@
+/* Adiciona perspectiva para a animação de virada do cartão */
+.flip-card {
+    perspective: 1000px;
+    width: 100%;
+    height: 100%;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Aplica a rotação do cartão quando a classe .flipped é adicionada */
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Define estilos para os lados da frente e de trás do cartão */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+/* Estilos para o lado da frente (imagem) */
+.flip-card-front {
+    /* Defina os estilos desejados para o lado da frente, se necessário */
+}
+
+/* Estilos para o lado de trás (campos de edição) */
+.flip-card-back {
+    transform: rotateY(180deg);
+    background-color: white;
+     padding: 20px; 
+}
+
+.card-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos personalizados para o diálogo */
+.custom-dialog {
+    max-width: 800px; 
+    width: 100%; 
+    height: auto; 
+    max-height: 80%; 
+}
+
+
+.container {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Garante que o conteúdo ocupe toda a altura do contêiner */
+}
+
+.card-resistances {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-chip {
+    margin: 5px; /* Adiciona um pequeno espaço entre os chips */
+}
+
+.flip-card {
+    perspective: 1000px;
+    width: 400px; /* Ajuste conforme necessário */
+    height: auto;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg); 
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens na vertical */
+}
+
+.form-container {
+    width: 100%;
+    max-width: 400px; /* Defina o tamanho máximo desejado */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens na vertical */
+    justify-content: space-between; /* Distribui os itens uniformemente ao longo do contêiner */
+    height: 800%; /* Garante que o formulário ocupe toda a altura disponível */
+}
+
+.example-full-width {
+    width: 80%; /* Ajuste conforme necessário */
+    margin-bottom: 2px;
+}
+
+button {
+    margin-top: 20px;
+}
+
+.form-footer {
+    margin-top: auto; /* Posiciona o rodapé do formulário */
+}
+
+.mat-expansion-panel-content .example-card-selecionados {
+    max-width: 20px; /* Defina a largura máxima desejada */
+    max-height: 20px; /* Defina a altura máxima desejada */
+  }
+  
+  .example-card {
+    max-width: 20px; /* Defina a largura máxima desejada */
+    max-height: 20px; /* Defina a altura máxima desejada */
+  }

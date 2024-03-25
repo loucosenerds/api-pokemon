@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="card-content">
+
+    <div class="flip-card" [class.flipped]="showFields">
+
+      <div class="flip-card-inner">
+
+        <div class="flip-card-front">
+ 
+            <!-- Resistências (rodapé) -->
+            <div class="card-resistances"> 
+                <mat-chip-listbox aria-label="Resistências" (click)="toggleFields()">
+                  <mat-chip-option color="default"  class="custom-chip mat-chip-option">Clique na Imagem</mat-chip-option>
+                </mat-chip-listbox>
+            </div>
+
+          <!-- Imagem do Card -->
+          <img class="card-image" [src]="card.images.small" alt="Imagem do Card" (click)="toggleFields()">
+
+          <!-- Resistências (rodapé) -->
+          <div *ngIf="card && card.resistances" class="card-resistances"> 
+            <div *ngFor="let resistance of card.resistances">
+              <mat-chip-listbox aria-label="Resistências">
+                <mat-chip-option color="accent" selected class="custom-chip mat-chip-option">{{ resistance.type }} ({{ resistance.value }} points)</mat-chip-option>
+              </mat-chip-listbox>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="flip-card-back">
+
+          <!-- Campos de edição -->
+          <form [formGroup]="formGroup"  >
+
+                <mat-form-field class="example-full-width">
+                  <mat-label>Nome</mat-label>
+                  <input type="text" matInput placeholder="Nome" formControlName="name">
+                  <mat-icon matSuffix>mode_edit</mat-icon>
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width">
+                  <mat-label>Tipos</mat-label>
+                  <input type="text" matInput placeholder="Tipos" formControlName="types">
+                  <mat-icon matSuffix>mode_edit</mat-icon>
+                </mat-form-field>
+
+
+                <!-- Botão "Salvar" destacado -->
+                <div class="form-footer">
+                  <button mat-raised-button color="primary" (click)="toggleFields()">SALVAR</button>  
+                </div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>

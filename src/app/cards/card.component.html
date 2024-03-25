@@ -1,0 +1,60 @@
+<div *ngIf="cardsToShow.length == 0">
+  <mat-spinner></mat-spinner>
+</div>
+
+<div class="" *ngIf="cardsToShow.length > 0">
+
+
+  <mat-accordion>
+
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <b> {{meusPokemons.length}} </b> : Meus Pokemons
+        </mat-panel-title>
+        <mat-panel-description>
+         ...
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+        
+        <div class="card-wrapper-selecionados">
+
+          <div class="example-card-selecionados" *ngFor="let card of meusPokemons" (click)="openDetalhes(card)">
+    
+            <img mat-card-image [src]="card.images.small" alt="Card Image"> 
+      
+          </div>
+    
+        </div>
+ 
+    </mat-expansion-panel>
+
+  </mat-accordion>
+
+  <div class=" container">
+
+    <div class="card-wrapper">
+
+      <mat-card class="example-card" *ngFor="let card of cardsToShow">
+
+        <img mat-card-image [src]="card.images.small" alt="Card Image">
+        <mat-card-content>
+          <p>{{ card.description }}</p>
+        </mat-card-content>
+
+        <mat-card-actions>
+          <button (click)="openDetalhes(card)" mat-button>DETALHES</button>
+          <button mat-button (click)="pegarPokemon(card)">PEGAR</button>
+        </mat-card-actions>
+
+      </mat-card>
+
+    </div>
+
+  </div>
+
+
+
+
+</div>
