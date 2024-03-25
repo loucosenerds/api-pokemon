@@ -1,27 +1,39 @@
-# Cards
+# Pokemon TCG Deck Builder
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.1.
+Este é um projeto simples para construção de decks do Pokemon TCG, utilizando a API oficial de cartas do jogo.
 
-## Development server
+## Sobre o Projeto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+A ideia é fornecer aos jogadores uma aplicação na qual possam montar seus decks de cartas do Pokemon TCG. O projeto é construído com Angular 8+, Tailwind CSS e a biblioteca Infragistics.
 
-## Code scaffolding
+## Funcionalidades
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Lista de Baralhos
 
-## Build
+- Os usuários podem visualizar seus baralhos existentes.
+- Os usuários podem criar, editar e remover baralhos.
+- Ao clicar em um baralho, os usuários podem ver os detalhes do mesmo.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Criação de Baralhos
 
-## Running unit tests
+- Os usuários podem nomear seus baralhos.
+- Eles podem adicionar cartas ao baralho.
+- O baralho deve conter entre 24 e 60 cartas.
+- Cada carta no baralho deve ser única, permitindo no máximo 4 cartas com o mesmo nome.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Detalhes do Baralho
 
-## Running end-to-end tests
+- Os usuários podem ver o número de Pokémon e cartas de treinador no baralho.
+- Eles também podem ver quantas cores e tipos únicos de cartas existem no baralho.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Como Utilizar
 
-## Further help
+1. Clone este repositório.
+2. Instale as dependências usando `npm install`.
+3. Inicie o servidor de desenvolvimento com `ng serve`.
+4. Acesse a aplicação em [http://localhost:4200](http://localhost:4200).
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Contribuição
+
+Contribuições são bem-vindas! Se você tiver alguma sugestão ou encontrar algum problema, por favor, abra uma issue neste repositório.
+
